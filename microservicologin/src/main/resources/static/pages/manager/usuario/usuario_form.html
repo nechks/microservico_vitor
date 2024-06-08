@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 px-sm-0 px-md-2 px-lg-2 px-xl-5 mt-2">
+			<div class="card border-0 bg-light mx-2 mb-3">
+				<div class="card-header cor-principal-site-background text-white rounded-3">
+					<h4 class="card-title text-center fs-4" id="id_titulo_card">Cadastro do Usuário</h4>
+				</div>
+				<div class="card-body px-0">
+					<form>
+						<div class="row">
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 form-group">
+								<label class="form-label" for="id_nome">Nome completo</label>
+								<input class="form-control cor-principal-site-bordas text-uppercase" type="text" id="id_nome">
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 form-group">
+								<label class="form-label" for="id_email">E-mail</label>
+								<input class="form-control cor-principal-site-bordas" type="text" id="id_email">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+								<div class="form-group">
+									<label class="form-label">Sexo</label>
+									<select class="form-select cor-principal-site-bordas" id="id_sexo">
+										<option value="F">Feminino</option>
+										<option value="M">Masculino</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group col-sm-12 col-md-3 col-lg-3 col-xl-3">
+								<label class="form-label" for="id_grupo">Grupo</label>
+								<select class="form-select cor-principal-site-bordas" id="id_grupo">
+									<option value="Administrador">Administrador</option>
+									<option value="Cliente">Cliente</option>
+								</select>
+							</div>
+							<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+								<label for="id_senha" class="form-label">Senha</label>
+								<input id="id_senha" name="senha" type="password" class="form-control cor-principal-site-bordas" value="" placeholder="Digite sua senha">
+							</div>
+							<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+								<label for="id_confirma_senha" class="form-label">Confirma Senha</label>
+								<input id="id_confirma_senha" name="confirma_senha" type="password" class="form-control cor-principal-site-bordas" value="" placeholder="Confirme sua senha">
+							</div>
+						</div>
+						<div class="row mt-2">
+		    				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="text-align:right !important;">
+								<button class="btn text-white cor-principal-site-background" type="button" id="id_btn_salvar"><i class='fa fa-floppy-o' aria-hidden='true'></i> Salvar</button>
+								<button class="btn text-white cor-principal-site-background" type="button" id="id_btn_cancelar"><i class='fa fa-times' aria-hidden='true'></i> Cancelar</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- JavaScript necessário para esta página -->
+		<script type="text/javascript" src="../../../js/pages/manager/usuario/usuario_form.js"></script>
+	</body>
+</html>

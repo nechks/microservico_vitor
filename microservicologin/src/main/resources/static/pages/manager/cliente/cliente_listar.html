@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 px-sm-0 px-md-2 px-lg-2 px-xl-5">
+			<div class="card border-0 bg-light">
+			  	<div class="card-body m-0 p-0">
+					<form id="form_entidade">
+						<div class="row mx-1 p-0" style="display: none;" id="id_div_pesquisa">
+							<fieldset class="border border-success rounded-3 p-3 mb-2">
+								<legend class="float-none w-auto px-1 fs-6 text-success">Pesquisar Cliente</legend>
+								<div class="row">
+									<div class="form-group col-sm-12 col-md-6 col-lg-6 col-xl-6">
+										<label class="form-label" for="id_nome">Nome</label>
+										<input class="form-control cor-principal-site-bordas" type="text" value="" id="id_nome"/>
+									</div>
+									<div class="form-group col-sm-12 col-md-3 col-lg-3 col-xl-3">
+										<label class="form-label" for="id_cpf">CPF</label>
+										<input class="form-control cor-principal-site-bordas" type="text" value="" id="id_cpf"/>
+									</div>
+									<div class="form-group col-sm-12 col-md-2 col-lg-2 col-xl-2">
+										<label class="form-label" for="id_sexo">Sexo</label>
+										<select class="form-select cor-principal-site-bordas" id="id_sexo">
+											<option value="T">Todos</option>
+											<option value="F">Feminino</option>
+											<option value="M">Masculino</option>
+										</select>
+									</div>
+									<div class="form-group col-sm-12 col-md-1 col-lg-1 col-xl-1 mt-4 pt-2">
+										<button class="btn text-white cor-principal-site-background" id="id_btn_buscar" type="button" title="Buscar"><i class="fa fa-search" aria-hidden="true"></i></button>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+					</form>
+					<div class="card border-0 bg-light">
+						<div class="card-header cor-principal-site-background text-white rounded-3 mx-1">
+							<div class="row">
+								<div class="text-center col-sm-12 col-md-11 col-lg-11 col-xl-11" id="id_div_numero_de_linhas">
+									<h4 class="card-title text-center fs-4" id="id_titulo_card">Lista de Clientes</h4>
+								</div>
+							</div>
+						</div>
+						<div class="card-body m-0 p-0">
+							<div class="row mx-1 p-0">
+								<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="id_div_conteudo"></div>
+							</div>
+						</div>
+					</div>
+					<div class='row mx-1 p-0' id='id_div_paginator' style="display: none;">
+						<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12' id='id_paginator'></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- JavaScript necessário para esta página -->
+ 		<script type="text/javascript" src="../../../js/pages/manager/cliente/cliente_visualizar_dados.js"></script>
+		<script type="text/javascript" src="../../../js/pages/manager/cliente/cliente_listar.js"></script>
+	</body>
+</html>
